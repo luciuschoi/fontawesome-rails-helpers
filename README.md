@@ -22,6 +22,31 @@ Or install it yourself as:
 
 ## Usage
 
+After yarn add @fortawesome/fontawesome-free and setup for using in rails 5+, referencing https://kelishrestha.medium.com/how-to-install-font-awesome-with-yarn-in-rails-6-0-c2506543c13d,
+
+```bash
+$ yarn add @fortawesome/fontawesome-free
+```
+
+In application.js,
+
+```js
+import "@fortawesome/fontawesome-free/js/all";
+```
+
+In application.scss,
+
+```scss
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
+```
+
+and then, automatically you can use these helpers.
+
 Minimal usage;
 
 ```erb
