@@ -8,17 +8,17 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Lucius Choi"]
   spec.email         = ["lucius.choi@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Rails helpers for Fontawesome 4+"
+  spec.description   = "After yarn add @fortawesome/fontawesome-free and setup for using in rails 5+, referencing https://kelishrestha.medium.com/how-to-install-font-awesome-with-yarn-in-rails-6-0-c2506543c13d, automatically you can use these helpers."
+  spec.homepage      = "https://github.com/luciuschoi/fontawesome-rails-helpers/blob/main/README.md"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://github.com/luciuschoi/fontawesome-rails-helpers"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/luciuschoi/fontawesome-rails-helpers"
+  spec.metadata["changelog_uri"] = "https://github.com/luciuschoi/fontawesome-rails-helpers"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
