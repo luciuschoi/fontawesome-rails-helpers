@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fontawesome/rails/helpers`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+This gem is built for helping using awesome fonts 5+ in rails. If you use Bootstrap 4+, you can use Bootstrap's style classes.
 
 ## Installation
 
@@ -22,7 +22,50 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Minimal usage;
+
+```erb
+<%= fab_icon 'twitter' %>
+```
+
+With icon annotate,
+
+```erb
+<%= fab_icon 'twitter', text: 'Twitter' %>
+```
+
+With icon sizing,
+
+```erb
+<%= fab_icon 'twitter', text: 'Twitter', ratio: '2x' %> or
+<%= fab_icon 'twitter fa-2x', text: 'Twitter' %> or
+```
+
+With icon animation, two options; `spin` or `pulse`
+
+```erb
+<%= fab_icon 'twitter fa-spin', text: 'Twitter', ratio: '2x'>
+<%= fab_icon 'twitter fa-pulse', text: 'Twitter', ratio: '2x'>
+```
+
+With combining Bootstrap 4+ classes for icons with text,
+
+```erb
+<%= fas_icon('camera', text: 'camera', class: 'badge rounded-pill bg-primary') %>
+```
+
+With inline styles for icons with text,
+
+```erb
+<%= fas_icon('camera', text: 'camera', style: 'color: dodgerblue') %>
+```
+
+With inline styles or classes only for text,
+
+```erb
+<%= fas_icon('camera', text: 'camera', text_class: 'text-danger') %>
+<%= fas_icon('camera', text: 'camera', text_style: 'color: dodgerblue') %>
+```
 
 ## Development
 
